@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Form Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="logo-wrapper">
+            <div class="logo-text">
+                <img src="images/odin-lined.png"">
+                <h1>brimwell</h1>
+            </div>
+            <div class="logo-src">
+                <p class="source">Photo by <a href="https://unsplash.com/@debrupas">Pascal Debrunner</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+
+        <main>
+            <div class="main-wrapper">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.</p>
+                <p class="testing">You <em>know</em> you want to.</p>
+
+                
+                    
+                <form onsubmit ="return verifyPassword()">
+                    <div class="midsection">
+                        <p>Let's do this!</p>
+
+                        <div class="form-wrapper">
+                            <div class="form-1">
+                                <label for="first_name">First Name</label>
+                                <input  type="text" id="first_name" name="first_name" required>
+                            </div>
+                            
+                            <div class="form-2">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" required>
+                            </div>    
+
+                            <div class="form-3">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-4">
+                                <label for="tel">Phone Number</label>
+                                <input type="tel" id="tel" name="tel" required pattern="[0-9]+">
+                            </div>
+                            
+                            <div class="form-5" id="form-5">
+                                <label for="pw1">Password</label>
+                                <input type="password" name="pw1" id="pw1">
+                            </div>
+                            
+                            <div class="form-6">
+                                <label for="pw2">Confirm Password</label>
+                                <input type="password" name="pw2" id="pw2" required>
+                            </div>
+                        </div>    
+                    </div>    
+                    <button type="submit">Create Account</button>
+                </form>
+                
+
+                
+                <p class="smaller">Already have an account? <a href="#">Log in</a></p>
+                <p id="log"></p>
+            </div>    
+        </main>
+    </div>
+</body>
+</html>
